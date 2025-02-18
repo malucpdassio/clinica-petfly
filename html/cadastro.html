@@ -4,35 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Clínica & Petshop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css/home.css">
 </head>
 <body>
     <div class="container">
-        <a href=""><img src="/clinica-petfly/imagem/logo com nome.png" alt="Logo Clinica" class="img__logomenor"></a>
-        <h2>Cadastro</h2>
-        <form action="dashboard.html" method="POST">
-            <label for="nome">Nome Completo*</label>
+        <a href=""><img src="/imagem/Logo2.png" alt="Logo Clinica" class="img__logomenor"></a>
+        <form action="dashboard.html" method="POST" class="form-cadastro">
+            <label for="nome" class="label-cadastro">Nome Completo*</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="telefone">Número de Telefone</label>
+            <label for="telefone" class="label-cadastro">Número de Telefone</label>
             <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
 
-            <label for="email">Email</label>
+            <label for="email"class="label-cadastro">Email</label>
             <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
 
-            <label for="rua">Rua</label>
+            <label for="rua"class="label-cadastro">Rua</label>
             <input type="text" id="rua" name="rua">
 
-            <label for="complemento">Complemento</label>
+            <label for="complemento"class="label-cadastro">Complemento</label>
             <input type="text" id="complemento" name="complemento">
 
-            <label for="cidade">Cidade</label>
+            <label for="cidade"class="label-cadastro">Cidade</label>
             <input type="text" id="cidade" name="cidade">
 
-            <label for="cep">CEP</label>
+            <label for="cep"class="label-cadastro">CEP</label>
             <input type="text" id="cep" name="cep" placeholder="00000-000">
 
-            <label for="estado">Estado</label>
+            <label for="estado"class="label-cadastro">Estado</label>
             <select id="estado" name="estado">
                 <option value="">Selecione</option>
                 <option value="SP">São Paulo</option>
@@ -50,16 +49,14 @@
                 <option value="DF">Distrito Federal</option>
             </select>
 
-            <h3>Seu Pet</h3>
-
-            <label for="pet_nome">Nome do Pet</label>
+            <label for="pet_nome"class="label-cadastro">Nome do Pet</label>
             <input type="text" id="pet_nome" name="pet_nome">
 
-            <label for="raca">Raça</label>
+            <label for="raca"class="label-cadastro">Raça</label>
             <input type="text" id="raca" name="raca">
 
-            <button type="submit"> <a href="clientes.html">Cadastrar</a></button>
         </form>
+         <button type="submit" class="botao__cadastro"> <a href="/html/clientes.html">Cadastrar</a></button>
     </div>
 </body>
 </html>

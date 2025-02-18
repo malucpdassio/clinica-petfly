@@ -7,7 +7,8 @@
     --verde-6: #1ba553;
     --branco: #FFF;
     --fonte-1: 'Poppins', serif;
-    --font-2:  'Lora', serif;  
+    --font-2:  'Lora', serif; 
+    --cinza-1: #333; 
 }
 
 /*Header*/
@@ -96,7 +97,7 @@
 
 .about__container {
     display: flex;
-    background: url(/clinica-petfly/imagem/Veterinária.png);
+    background: url(/imagem/Veterinária.png);
     background-repeat: no-repeat;
     padding-bottom: 25%;
     font-family: var(--font-2);
@@ -259,3 +260,94 @@ gap: 10px;
     top: 45%;
     right: 24em;
 }
+
+
+/* pagina de cadastro */
+
+/* Estiliza o container para centralizar */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Organiza os campos do formulário em colunas */
+.form-cadastro {
+    display: grid;
+    grid-template-columns: 30% 70%; /* Coluna 1: Labels | Coluna 2: Inputs */
+    gap: 5px;
+    width: 100%;
+    margin: auto;
+    align-items:center;
+    color: var(--cinza-1);
+    font-family: var(--fonte-1);
+    font-size: 20px;
+}
+
+/* Alinha os labels à direita */
+.label-cadastro {
+    text-align: left;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* Ajusta os inputs para preencher a coluna */
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Define tamanhos específicos para CEP e Estado */
+#cep {
+    width: 23%; /* Reduz a largura do campo CEP */
+}
+
+#estado {
+    width: 25%; /* Reduz a largura do campo Estado */
+}
+
+/* Centraliza o botão na tela */
+.botao__cadastro {
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--verde-1);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botao__cadastro a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+/* Efeito hover no botão */
+.botao__cadastro:hover {
+    background-color: var(--cinza-1);
+}
+.cadastro {
+    color: var(--cinza-1);
+}
+.cadastro_pet {
+  color: var(--cinza-1);     
+}
+.img__logomenor {
+width: 40%;
+height: 60%;
+margin: 50px 10px 50px 10px;
+background-color: var(--verde-4);
+}
+
+body{
+    background-color: var(--verde-4);
+ }
