@@ -97,7 +97,7 @@
 
 .about__container {
     display: flex;
-    background: url(/imagem/Veterinária.png);
+    background: url(/clinica-petfly/imagem/Veterinária.png);
     background-repeat: no-repeat;
     padding-bottom: 25%;
     font-family: var(--font-2);
