@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Clínica & Petshop</title>
-    <link rel="stylesheet" href="/clinica-petfly/styles.css/home.css"> <!-- Usando um CSS externo -->
+    <link rel="stylesheet" href="/styles.css/home.css"> <!-- Usando um CSS externo -->
 </head>
 <body>
     <div class="container">
-        <a href=""><img src="/clinica-petfly/imagem/logo com nome.png" alt="Logo Clinica" class="img__logogrande"></a>
+        <a href=""><img src="/imagem/logo com nome.png" alt="Logo Clinica" class="img__logogrande"></a>
         <h2 class="container__login">Informe seus dados de acesso</h2>
         
-        <form action="dashboard.html" method="POST">
+        <form id="loginForm">
             <label for="usuario">*Email, celular ou login</label>
             <input type="text" id="usuario" name="usuario" required>
             
             <label for="senha">*Senha</label>
             <input type="password" id="senha" name="senha" required>
-            
+        
+            <p id="mensagemErro" style="color: red; display: none;">Usuário ou senha inválidos!</p>
+        
             <button type="submit">Entrar</button>
         </form>
-            <a href="#">Clique aqui caso tenha esquecido a senha ou login</a>
-        <p>Não tem conta ainda? </p>
-        <button type="submit"> <a href="cadastro.html">Criar conta</a></button>
+        
+        <a href="#">Clique aqui caso tenha esquecido a senha ou login</a>
+        <p>Não tem conta ainda?</p>
+        <a href="cadastro.html"><button type="button">Criar conta</button></a>
+        
     </div>
+    <script src="/scriptlogin.js"></script>
 </body>
+
 </html>
