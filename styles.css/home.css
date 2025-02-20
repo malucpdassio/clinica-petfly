@@ -1,3 +1,4 @@
+/*variaveis e reset*/
 :root {
     --verde-1: #198f49;
     --verde-2: #a8f4c4;
@@ -9,6 +10,10 @@
     --fonte-1: 'Poppins', serif;
     --font-2:  'Lora', serif; 
     --cinza-1: #333; 
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 
 /*Header*/
@@ -97,13 +102,13 @@
 
 .about__container {
     display: flex;
-    background: url(/clinica-petfly/imagem/Veterinária.png);
+    background: url(..//imagem/Veterinária.png);
     background-repeat: no-repeat;
     padding-bottom: 25%;
     font-family: var(--font-2);
     color: var(--verde-3);
     background-size: cover;
-    height: 30vh;     
+    height: 30vh; 
 }
 
 /*About*/
