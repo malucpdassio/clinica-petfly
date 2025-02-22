@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Usuário - Clínica & Petshop</title>
+    <link rel="stylesheet" href="/styles.css/home.css">
+</head>
+<body>
+    <div class="container">
+        <a href="#"><img src="/imagem/Logo2.png" alt="Logo Clinica" class="img__logomenor"></a>
+
+        <h2>Bem-vindo(a), <span id="usuariosNome"></span></h2>
+
+        <div class="usuario-info">
+            <p><strong>Email:</strong> <span id="usuariosEmail"></span></p>
+            <p><strong>Telefone:</strong> <span id="usuariosTelefone"></span></p>
+            <br>
+            <a href="/html/cadastropet.html" class="login__veterinario">Cadastrar Pet</a>
+            <br><br>
+            <!-- Os pets serão inseridos aqui via JS -->
+            <h3>Lista de Pets</h3>
+            <div id="petsContainer">
+                <table id="petsLista">
+                    <thead>
+                
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+        
+        <br>
+        <button id="logoutBtn">Sair</button>
+    </div>
+    
+    <script src="/dashboard.js"></script>
+</body>
+</html>
