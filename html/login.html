@@ -7,29 +7,40 @@
 
     <link rel="stylesheet" href="..//styles/home.css"> <!-- Usando um CSS externo -->
 </head>
+<nav class="navegação">
+    <ul class="navegação__container">
+        <li class="navegação__content"><a href="..//html/index.html">Inicio</a></li>
+        <li class="navegação__content"><a href="#">Petshop</a></li>
+
+        <li class="navegação__content"><a href="#">Contato</a></li>
+        <li class="navegação__content"><a href="sobrenos.html">Sobre nós</a></li>
+
+    </ul>
+</nav>
+
 <body>
     <div class="container">
         <a href=""><img src="..//imagem/logo com nome.png" alt="Logo Clinica" class="img__logogrande"></a>
 
         <h2 class="container__login">Informe seus dados de acesso</h2>
-        
-        <form id="loginForm">
-            <label for="usuario">*Email, celular ou login</label>
-            <input type="text" id="usuario" name="usuario" required>
+       <div class="teste"> 
+            <form id="loginForm" class="loginForm">
+                <label for="usuario">*Email, celular ou login</label>
+                <input type="text" id="usuario" name="usuario" required>
+                
+                <label for="senha">*Senha</label>
+                <input type="password" id="senha" name="senha" required>
             
-            <label for="senha">*Senha</label>
-            <input type="password" id="senha" name="senha" required>
+                <p id="mensagemErro" style="color: red; display: none;">Usuário ou senha inválidos!</p>
+            
+                <button type="submit">Entrar</button>
+            </form>
+       </div>
         
-            <p id="mensagemErro" style="color: red; display: none;">Usuário ou senha inválidos!</p>
+            <a href="#">Clique aqui caso tenha esquecido a senha ou login</a>
+            <p>Não tem conta ainda?</p>
+            <a href="cadastro.html"><button type="button">Criar conta</button></a>
         
-            <button type="submit">Entrar</button>
-        </form>
-        
-        <a href="#">Clique aqui caso tenha esquecido a senha ou login</a>
-        <p>Não tem conta ainda?</p>
-        <a href="cadastro.html"><button type="button">Criar conta</button></a>
-        
-    </div>
     <script src="../js/scriptlogin.js"></script>
 </body>
 
