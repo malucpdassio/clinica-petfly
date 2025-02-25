@@ -5,49 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Clínica & Petshop</title>
 
-    <link rel="stylesheet" href="..//styles/home.css">
+    <link rel="stylesheet" href="../styles/cadastropet.css">
 </head>
 <body>
     <div class="container">
         <a href=""><img src="..//imagem/Logo2.png" alt="Logo Clinica" class="img__logomenor"></a>
         <form >
-            <br></br>
+           
             <label for="pet_nome"class="label-cadastro">Nome do Pet</label>
             <input type="text" id="pet_nome" name="pet_nome">
 
-        <label for="rua"class="label-cadastro">Rua</label>
-        <input type="text" id="rua" name="rua">
+            <label for="rua"class="label-cadastro">Rua</label>
+            <input type="text" id="rua" name="rua">
 
-        <label for="complemento"class="label-cadastro">Complemento</label>
-        <input type="text" id="complemento" name="complemento">
+            <label for="complemento"class="label-cadastro">Complemento</label>
+            <input type="text" id="complemento" name="complemento">
 
-        <label for="cidade"class="label-cadastro">Cidade</label>
-        <input type="text" id="cidade" name="cidade">
-        <br></br>
-        <label for="cep"class="label-cadastro">CEP</label>
-        <input type="text" id="cep" name="cep" placeholder="00000-000">
-        <br></br>
-        <label for="estado"class="label-cadastro">Estado</label>
-        <select id="estado" name="estado">
-            <option value="">Selecione</option>
-            <option value="SP">São Paulo</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="PR">Paraná</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="BA">Bahia</option>
-            <option value="PE">Pernambuco</option>
-            <option value="CE">Ceará</option>
-            <option value="MA">Maranhão</option>
-            <option value="GO">Goiás</option>
-            <option value="DF">Distrito Federal</option>
-        </select>
+            <label for="cidade"class="label-cadastro">Cidade</label>
+            <input type="text" id="cidade" name="cidade">
+            
+            <label for="cep"class="label-cadastro">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="00000-000">
+        
+            <label for="estado"class="label-cadastro">Estado</label>
+            <select id="estado" name="estado">
+                <option value="">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="BA">Bahia</option>
+                <option value="PE">Pernambuco</option>
+                <option value="CE">Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="GO">Goiás</option>
+                <option value="DF">Distrito Federal</option>
+            </select>
+        </form>
+        
+        <div class="botao">
+            <button type="submit" class="botao__cadastro"> <a href="dashboard.html">Cadastrar</a></button>
+            <a href="clientes.html">Login</a>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
 
-    </form>
-         <button type="submit" class="botao__cadastro"> <a href="dashboard.html">Cadastrar</a></button>
-
-         <script src="../js/cadastropet.js"></script>
+    <script src="../js/cadastropet.js"></script>
 </body>
 </html>

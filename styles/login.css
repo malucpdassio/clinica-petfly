@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+:root {
+    /*Cores*/
+    --verde-1: #198f49;
+    --verde-2: #a8f4c4;
+    --verde-3: #e9f8f6;
+    --verde-4: #99f6bf;
+    --verde-5: #b9d2cf;
+    --verde-6: #1ba553;
+    --branco: #FFF;
+    --cinza-1: #333; 
+
+    /*Fontes*/
+    --subtitulo: 'Fjalla One', serif;
+    --paragrafo:  'Dosis', serif; 
+}
+
+
+
+
+
+/*Geral*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var();
+    margin: auto;
+}
+
+.img__logomenor {
+    width: 50%;
+}
+
+/*Main*/
+main{
+    background-color: rgba(255, 255, 255, 0.726);
+    margin: 6% auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px 0px rgb(0 0 0 / 19%);
+    width: 50%;
+    
+}
+
+/*Cadastro*/
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.cadastro__subtitulo{
+    font-family: var(--subtitulo);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/*Container*/
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container__subtitulo{
+    font-family: var(--subtitulo);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+p, label, a{
+    font-family: var(--paragrafo);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.container__login{
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column; 
+    gap: 2px;
+    width: 36%;
+
+}
+.container__login > label{
+    text-align: left;
+    
+}
+
+.container__login > input{
+    width: 95%;
+    padding: 5px 10px;
+    color: #46464659;
+}
+

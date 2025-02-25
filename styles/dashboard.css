@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+:root {
+    /*Cores*/
+    --verde-1: #198f49;
+    --verde-2: #a8f4c4;
+    --verde-3: #e9f8f6;
+    --verde-4: #99f6bf;
+    --verde-5: #b9d2cf;
+    --verde-6: #1ba553;
+    --branco: #FFF;
+    --cinza-1: #333; 
+
+    /*Fontes*/
+    --subtitulo: 'Fjalla One', serif;
+    --paragrafo:  'Dosis', serif; 
+}
+
+/*Geral*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--verde-2);
+
+}
+
+img{
+    width: 30%;
+}
+
+/*Container*/
+.container{
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px 0px rgb(0 0 0 / 19%);
+    width: 60%;
+    padding: 20px;
+    margin: 10% auto;
+}
+
+.container > h2{
+    text-align: center;
+    font-family: var(--subtitulo);
+    font-size: 1.6rem;
+}
+.container > h1{
+    text-align: center;
+    margin-bottom:3% ;
+    font-family: var(--subtitulo);
+    font-size: 2.3rem;
+}
+p{
+    font-family: var(--paragrafo);
+    font-size: 1.2rem;
+}
+
+.usuario-info{
+    display: flex;
+    
+    flex-direction: column;
+    text-align: center;
+}
+
+.usuario-info > h3{
+    font-family: var(--subtitulo);
+}
+
+.botao{
+    display: flex;
+    gap: 2%;
+}
+.botao > a{
+    border-bottom: 1px solid var(--verde-6);
+    color: #333;
+    text-decoration: none;
+    font-family: var(--subtitulo);
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.botao > a:hover{
+    transition: 1s;
+    background-color: var(--verde-6);
+    color:white;
+}
+
+.botao > button{
+    background-color: #33333300;
+    border-color: #33333300;
+    border-bottom: 3px solid var(--verde-6);
+    color: #333;
+    text-decoration: none;
+    font-family: var(--subtitulo);
+    font-size: 1.3rem;
+    padding: 5px;
+}
+.botao > button:hover{
+    transition: 1s;
+    background-color: var(--verde-6);
+    color:white;
+}
+
+
+
+
