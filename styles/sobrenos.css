@@ -195,3 +195,132 @@
     top: 45%;
     right: 24em;
 }
+
+
+/* ================= MEDIA QUERY PARA TABLETS ================= */
+@media screen and (max-width: 768px) {
+    .cabeçalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logotipo {
+        height: 80px; /* Reduz um pouco o tamanho */
+        margin-left: 0; /* Remove o deslocamento lateral */
+    }
+
+    .login {
+        text-align: center;
+    }
+
+    .navegação__container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navegação__content a {
+        font-size: 20px;
+    }
+
+    .apresentação {
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .titulo__texto {
+        font-size: 14px;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .rodapé {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .endereço {
+        margin: 10px auto;
+    }
+
+    .redes {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* ================= MEDIA QUERY PARA CELULARES ================= */
+@media screen and (max-width: 480px) {
+    .cabeçalho {
+        padding: 15px;
+    }
+
+    .logotipo {
+        height: 60px;
+    }
+
+    .login__veterinario {
+        font-size: 18px;
+    }
+
+    .botão__acesso {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .navegação__container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navegação__content a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .apresentação {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .apresentação__dentista {
+        max-width: 90%;
+    }
+
+    .titulo {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .titulo__texto {
+        font-size: 12px;
+        padding: 15px;
+        width: 95%;
+    }
+
+    .rodapé {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .redes {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .redes a {
+        padding: 5px;
+    }
+}
