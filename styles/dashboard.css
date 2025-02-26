@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #98fb98;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Nav*/
+.navegação__container {
+    display: flex;
+    list-style: none;
+    background-color: var(--verde-6);
+    padding: 6px 0;
+    justify-content:center;
+    margin: 0;
+    gap: 200px;
+
+}
+
+.navegação__content {
+    width: auto;
+}
+
+
+.navegação__content a {
+    display: block;
+    text-decoration: none;
+    color: var(--verde-3);
+    text-transform: uppercase;
+    font-family: var(--fonte-1);
+    font-size: 25px;
+    margin: 0;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navegação__content a:hover{
+    transform: translateY(-10px);
+}
+
+.container {
+    background: rgb(202, 247, 219);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2e8b57;
+}
+
+.info {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background: #2e8b57;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao:hover {
+    background: #246b47;
+}
+
+.lista__pets {
+    padding: 10px auto;
+    font-family: var(--fonte-1);
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(80, 78, 78);
+    background-color: #98fb98;
+    border: 1px solid;  
+} 
+
+.botão__entrar {
+    font: var(--fonte-1);
+    color: black;
+    font-weight: 700;
+    background: #98fb98;
+    padding: 5px 15px;
+    margin: 7px 0;
+    border-radius: 15px;
+    border: 0.1em solid gray;
+    text-decoration: none;
+
+ }
+ /* Mudança de cor ao passar o mouse */
+.botão__entrar:hover {
+    background-color: var(--verde-1); /* Nova cor ao passar o mouse */
+    color: var(--branco); /* Alterando a cor do texto */

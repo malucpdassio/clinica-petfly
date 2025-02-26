@@ -4,22 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel do Usuário - Clínica & Petshop</title>
-    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
 </head>
-
-<nav class="navegação">
-    <ul class="navegação__container">
-        <li class="navegação__content"><a href="..//html/index.html">Inicio</a></li>
-        <li class="navegação__content"><a href="#">Petshop</a></li>
-
-        <li class="navegação__content"><a href="#">Contato</a></li>
-        <li class="navegação__content"><a href="sobrenos.html">Sobre nós</a></li>
-
-    </ul>
-</nav>
 
 <body>
     <div class="container">
+    
         <a href="#"><img src="/imagem/Logo2.png" alt="Logo Clinica" class="img__logomenor"></a>
 
         <h2>Bem-vindo(a), <span id="usuariosNome"></span></h2>
@@ -28,10 +21,11 @@
             <p><strong>Email:</strong> <span id="usuariosEmail"></span></p>
             <p><strong>Telefone:</strong> <span id="usuariosTelefone"></span></p>
             <br>
-            <a href="/html/cadastropet.html" class="login__veterinario">Cadastrar Pet</a>
+            <a href="/html/cadastropet.html" class="botão__entrar">Cadastrar Pet</a>
             <br><br>
+            
             <!-- Os pets serão inseridos aqui via JS -->
-            <h3>Lista de Pets</h3>
+            <h3 class="lista__pets">Lista de Pets</h3>
             <div id="petsContainer">
                 <table id="petsLista">
                     <thead>
@@ -46,7 +40,7 @@
         </div> 
         
         <br>
-        <button id="logoutBtn">Sair</button>
+        <button id="logoutBtn" class="botão__entrar">Sair</button>
     </div>
     
     <script src="../js/dashboard.js"></script>

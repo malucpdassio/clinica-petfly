@@ -263,7 +263,7 @@ gap: 10px;
     position: relative;
     padding: 0 10px;
     top: 45%;
-    right: 24em;
+    right: 20em;
 }
 
 
@@ -362,4 +362,33 @@ background-color: var(--verde-4);
 
 body{
     background-color: var(--verde-4);
+ }
+
+ /*pagina login*/
+
+ .container__login{
+    margin:0 0 15px 0;
+    font-family: var(--fonte-1);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--cinza-1);
+ }
+
+ .botão__entrar {
+    padding: 5px 15px;
+    margin: 7px 0;
+    border-radius: 15px;
+    border: 0.1em solid gray;
+
+ }
+ /* Mudança de cor ao passar o mouse */
+.botão__entrar:hover {
+    background-color: var(--verde-1); /* Nova cor ao passar o mouse */
+    color: var(--branco); /* Alterando a cor do texto */
+
+ .nova_conta {
+    padding: 7px;
+    font-family: var(--fonte-1);
+    font-weight: 700;
+    color: var(--cinza-1);
  }
