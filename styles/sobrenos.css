@@ -1,0 +1,197 @@
+/*variaveis e reset*/
+:root {
+    --verde-1: #198f49;
+    --verde-2: #a8f4c4;
+    --verde-3: #e9f8f6;
+    --verde-4: #99f6bf;
+    --verde-5: #b9d2cf;
+    --verde-6: #1ba553;
+    --branco: #FFF;
+    --fonte-1: 'Poppins', serif;
+    --font-2:  'Lora', serif; 
+    --cinza-1: #333; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+.cabeçalho {
+    display: flex;
+    background-color: var(--verde-3);
+    justify-content: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin: 0;
+}
+
+.logotipo {
+    height: 100px;
+    margin-left: 20%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    text-align: right;
+}
+
+.login__veterinario {
+    color: var(--verde-1);
+    font-family:var(--fonte-1);
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.botão__acesso {
+    background-color: var(--verde-5);
+    border: solid 1px var(--verde-5);
+    border-radius: 24px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: var(--fonte-1);
+    font-weight: 800;
+    color: var(--verde-1);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.seta {
+    width: 20px;
+}
+
+
+/*Nav*/
+.navegação__container {
+    position: relative; /* Garante que o menu esteja em uma camada superior */
+    z-index: 10; /* Coloca o menu acima da imagem */
+    display: flex;
+    list-style: none;
+    background-color: var(--verde-6);
+    padding: 6px 0;
+    justify-content: center;
+    gap: 200px;
+
+}
+
+.navegação__content {
+    width: auto;
+}
+
+
+.navegação__content a {
+    display: block;
+    text-decoration: none;
+    color: var(--verde-3);
+    text-transform: uppercase;
+    font-family: var(--fonte-1);
+    font-size: 25px;
+    margin: 0;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navegação__content a:hover{
+    transform: translateY(-10px);
+}
+
+
+/*apresentação sobre nos*/
+.apresentação {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0; /* Adiciona espaço ao invés de usar altura fixa */
+    background-color: var(--verde-4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1; /* Mantém abaixo do menu */
+    gap: 30px;
+}
+
+
+.apresentação__dentista {
+    position: relative;
+    width: 100%; /* Reduz o tamanho da imagem */
+    max-width: 600px; /* Define um tamanho máximo */
+}
+
+.imagem__dentista {
+    width: 100%; /* Garante que a imagem respeite o tamanho do container */
+    height: auto;
+    display: block;
+    border-radius: 24px; /* Borda arredondada opcional */
+ 
+    
+}
+
+.titulo {
+    position: relative; /* Altera para posição relativa */
+    margin-top: 20px; /* Espaçamento entre a imagem e o título */
+    text-align: center; /* Centraliza o texto */
+    font-family: var(--font-2);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--branco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: rgba(185, 210, 207, 0.7);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block; /* Mantém o tamanho ajustado ao conteúdo */
+}
+
+
+.titulo__texto {
+    font-family: var(--fonte-1);
+    font-weight:300;
+    font-size: 16px;
+    line-height: 1.8; /* Melhora o espaçamento entre as linhas */
+    text-align: justify;
+    background-color: rgba(185, 210, 207, 0.5);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px; /* Aumenta o espaço interno */
+    border-radius: 24px;
+    display: block;
+    width: 95%; /* Faz o texto ocupar quase toda a largura da tela */
+    max-width: 90%; /* Define um limite maior para telas grandes */
+    margin: 10px 33px;
+}
+
+
+
+
+/*Footer*/
+.rodapé {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde-6);
+    color: var(--branco );
+    font-family: var(--fonte-1);
+    font-size: 14px;
+    padding-top: 18px;
+}
+
+.endereço {
+    margin: 10px 0 30px 300px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes a {
+    position: relative;
+    padding: 0 10px;
+    top: 45%;
+    right: 24em;
+}
