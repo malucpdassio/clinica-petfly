@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <strong>Cidade:</strong> <span id="cidade-${index}">${usuario.cidade}</span><br>
                 <strong>CEP:</strong> <span id="cep-${index}">${usuario.cep}</span><br>
                 <strong>Estado:</strong> <span id="estado-${index}">${usuario.estado}</span><br>
-                <button onclick="editarPet(${index})">✏️ Editar</button>
-                <button onclick="deletarPet(${index})">🗑️ Excluir</button>
+                <button onclick="editarPet(${index})"><img src="../imagem/botao2.png" alt="Editar" width="16"> Editar</button>
+                <button onclick="deletarPet(${index})"><img src="../imagem/botao3.png" alt="Editar" width="16"> Excluir</button>
                 <hr>
             `;
 
