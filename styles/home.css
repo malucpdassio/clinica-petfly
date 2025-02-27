@@ -274,7 +274,9 @@ gap: 10px;
     width: 80%;
     margin: auto;
     text-align: center;
+    padding: 5%;
 }
+
 
 /* Organiza os campos do formulário em colunas */
 .form-cadastro {
@@ -289,6 +291,11 @@ gap: 10px;
     font-size: 20px;
 }
 
+.teste {
+    display: flex;
+    justify-content: center;
+    
+}
 /* Alinha os labels à direita */
 .label-cadastro {
     text-align: left;
