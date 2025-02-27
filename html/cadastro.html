@@ -4,23 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Clínica & Petshop</title>
-    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
 </head>
-
-<nav class="navegação">
-    <ul class="navegação__container">
-        <li class="navegação__content"><a href="..//html/index.html">Inicio</a></li>
-        <li class="navegação__content"><a href="#">Petshop</a></li>
-
-        <li class="navegação__content"><a href="#">Contato</a></li>
-        <li class="navegação__content"><a href="sobrenos.html">Sobre nós</a></li>
-
-    </ul>
-</nav>
 
 <body>
     <div class="container">
-        <a href=""><img src="/imagem/Logo2.png" alt="Logo Clinica" class="img__logomenor"></a>
+        <a href="index.html"><img src="/imagem/Logo2.png" alt="Logo Clinica" class="img__logomenor"></a>
+
         <form id="cadastroForm" class="form-cadastro">
             <label for="nome">Nome Completo*</label>
             <input type="text" id="nome" required>
@@ -39,7 +29,11 @@
         
             <p id="mensagemErro" style="color: red; display: none;">As senhas não coincidem!</p>
         
-            <button type="submit">Cadastrar</button>
+            <div class="container__cadastro__botao">
+                <button type="submit">Cadastrar</button>
+                <a href="clientes.html">Login</a>
+                <a href="index.html">Home</a>
+            </div>
         </form>
 
     </div>

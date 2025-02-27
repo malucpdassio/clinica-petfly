@@ -18,10 +18,6 @@
     --paragrafo:  'Dosis', serif; 
 }
 
-
-
-
-
 /*Geral*/
 *{
     margin: 0;
@@ -33,117 +29,57 @@ body{
     margin: auto;
 }
 
-.img__logogrande {
+.img__logomenor {
     width: 50%;
     display: flex;
     margin: auto;
 }
 
 /*Main*/
-main{
+.container{
     background-color: rgba(255, 255, 255, 0.726);
-    margin: 6% auto;
+    margin: 3% auto;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 4px 6px 0px rgb(0 0 0 / 19%);
     width: 50%;
-    
 }
 
 
 /*Container*/
-.container{
+.form-cadastro{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    gap: 5px;
     text-align: center;
 }
-
-.container__subtitulo{
-    font-family: var(--subtitulo);
-    font-weight: 300;
-    font-size: 1.2rem;
-}
-p, label, a{
+.form-cadastro > label{
     font-family: var(--paragrafo);
     font-weight: 400;
     font-size: 1.2rem;
+    text-align: left;    
 }
-
-.container__login{
-    margin: 2% auto;
-    display: flex;
-    flex-direction: column; 
-    gap: 2px;
-    width: 36%;
-
-}
-.container__login > label{
-    text-align: left;
-    
-}
-
-.container__login > input{
-    width: 90%;
+.form-cadastro > input{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 3%;
     padding: 5px 10px;
-    color: #46464659;
 }
 
-
-.container__login__botao{
+.form-cadastro > button{
     background-color: #33333300;
     border: none;
     border-bottom: 3px solid var(--verde-6);
+    width: 30%;
     padding: 5px;
     margin-top: 5px;
     left: 5px;
     font-family: var(--subtitulo);
-    font-size: 1.2rem;
-}
-
-.container__login__botao:hover{
-    transition: 1s;
-    background-color: var(--verde-6);
-    color:white;
-}
-
-/*Esqueci a senha*/
-.container > a{
-    color: var(--cinza-1);
-    text-decoration: none;
-}
-.container > a:hover{
-    color: var(--verde-6);
-    text-decoration: underline;
-    transition: 0.6s;
-}
-
-/*Cadastro*/
-
-.cadastro{
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-.cadastro__subtitulo{
-    margin-top: 0;
-    font-family: var(--subtitulo);
-    font-weight: 300;
     font-size: 1rem;
+    margin: auto;
 }
-
-.cadastro__botao > button{
-    background-color: #33333300;
-    border: none;
-    border-bottom: 3px solid var(--verde-6);
-    padding: 5px;
-    font-family: var(--subtitulo);
-    font-size: 1.2rem;
-}
-.cadastro__botao > button:hover{
+.form-cadastro > button:hover{
     transition: 1s;
     background-color: var(--verde-6);
     color:white;

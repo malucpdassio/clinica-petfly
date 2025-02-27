@@ -53,15 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Exibir os dados do pet com botões de editar e excluir
             li.innerHTML = `
-                <strong>Pet ${index + 1}</strong><br>
-                <strong>Nome:</strong> <span id="petNome-${index}">${usuario.petNome}</span><br>
-                <strong>Rua:</strong> <span id="rua-${index}">${usuario.rua}</span><br>
-                <strong>Complemento:</strong> <span id="complemento-${index}">${usuario.complemento}</span><br>
-                <strong>Cidade:</strong> <span id="cidade-${index}">${usuario.cidade}</span><br>
-                <strong>CEP:</strong> <span id="cep-${index}">${usuario.cep}</span><br>
-                <strong>Estado:</strong> <span id="estado-${index}">${usuario.estado}</span><br>
-                <button onclick="editarPet(${index})"><img src="../imagem/botao2.png" alt="Editar" width="16"> Editar</button>
-                <button onclick="deletarPet(${index})"><img src="../imagem/botao3.png" alt="Editar" width="16"> Excluir</button>
+                <strong class="pet">Pet ${index + 1}</strong><br>
+                <strong class="pet">Nome:</strong> <span id="petNome-${index}">${usuario.petNome}</span><br>
+                <strong class="pet">Rua:</strong> <span id="rua-${index}">${usuario.rua}</span><br>
+                <strong class="pet">Complemento:</strong> <span id="complemento-${index}">${usuario.complemento}</span><br>
+                <strong class="pet">Cidade:</strong> <span id="cidade-${index}">${usuario.cidade}</span><br>
+                <strong class="pet">CEP:</strong> <span id="cep-${index}">${usuario.cep}</span><br>
+                <strong class="pet">Estado:</strong> <span id="estado-${index}">${usuario.estado}</span><br>
+                <button class="botao-edicao"onclick="editarPet(${index})"><img src="../imagem/button-edit.png" alt="Editar" width="16"> Editar</button>
+                <button class="botao-delete" onclick="deletarPet(${index})"><img src="../imagem/button-bin.png" alt="Editar" width="16"> Excluir</button>
                 <hr>
             `;
 

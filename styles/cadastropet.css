@@ -53,8 +53,9 @@ form{
 }
 label{
     font-family: var(--paragrafo);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.3rem;
+    display: flex;
 }
 input{
     margin-bottom: 4%;
@@ -79,11 +80,11 @@ select{
     text-decoration: none;
     color: var(--cinza-1);
     padding: 10px;
-    border-bottom: 3px solid var(--verde-6);
+    border-bottom: 3px solid rgb(221, 47, 47);
 }
 .botao > a:hover{
     transition: 1s;
-    background-color: var(--verde-6);
+    background-color: rgb(221, 47, 47);
     color:white;
 }
 .botao__cadastro{
